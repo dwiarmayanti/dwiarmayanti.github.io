@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<form>
+        <label for="jumlah_detik">Jumlah Detik Pemakaian:</label><br>
+        <input type="number" id="jumlah_detik" name="jumlah_detik" required><br><br>
+        
+        <button type="button" onclick="hitungPulsa()">Hitung Biaya</button><br><br>
+        
+        <label for="hasil">Biaya Billing:</label><br>
+        <input type="text" id="hasil" readonly><br><br>
+    </form>
+
+    <script>
+        function hitungPulsa() {
+            var jumlahDetik = document.getElementById("jumlah_detik").value;
+            var hargaPerDetik = 30;
+            var biayaBilling = jumlahDetik / 45 * hargaPerDetik;
+            document.getElementById("hasil").value = biayaBilling.toFixed(2) + " rupiah";
+        }
+    </script>
+</body>
+</html>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
